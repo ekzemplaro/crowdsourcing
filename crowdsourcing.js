@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	crowdsourcing.js
 //
-//					May/15/2019
+//					Jun/30/2019
 //
 // -----------------------------------------------------------------------
 jQuery(function()
@@ -15,7 +15,7 @@ jQuery(function()
 		const str_out = table_gen_proc(res,0,12)
 		jQuery('#area_year').html(str_out)
 
-		const istart = 5
+		const istart = 6
 		const str_out_last = table_gen_proc(res,istart,istart + 12)
 		jQuery('#last_year').html(str_out_last)
 
