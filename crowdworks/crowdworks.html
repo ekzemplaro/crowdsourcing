@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="myApp" lang="ja">
+<head>
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<script src="/js/angular.min.js"></script>
+<script src="crowdworks.js"></script>
+<link rel="stylesheet" href="../css/crowdsourcing.css">
+<title>Crowdworks でのプロジェクト</title>
+</head>
+<body ng-controller="MainController">
+<h2><a href="https://crowdworks.jp">crowdworks</a> で私が行ったプロジェクト</h2>
+<table>
+<th>no</th>
+<th>url</th>
+<th>start</th>
+<th>end</th>
+<th>fee</th>
+<th>client</th>
+<th>title</th>
+<tr ng-repeat="(key,value) in items">
+	<td>{{key}}</td>
+	<td><a href="http://www.crowdworks.jp/public/jobs/{{value.url}}">
+	{{value.url}}</a></td>
+	<td>{{value.start}}</td>
+	<td>{{value.end}}</td>
+	<td>{{value.fee}}</td>
+	<td>{{value.client}}</td>
+	<td>{{value.title}}</td>
+</tr>
+</table>
+<hr />
+<a href="html_src/">src</a><br/>
+<hr />
+<a href="../">Return</a><p />
+Jul/25/2017 AM 08:25<p />
+</body>
+</html>
