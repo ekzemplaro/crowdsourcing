@@ -9,11 +9,11 @@
 import	sys
 import	json
 #
-sys.path.append ('/var/www/data_base/common/python_common')
+sys.path.append('/var/www/data_base/common/python_common')
 from file_io import file_to_str_proc
 #
 # ------------------------------------------------------------------
-def monthly_calc_proc (data_in):
+def monthly_calc_proc(data_in):
 	data_out = {}
 	for key in data_in:
 		ddx = data_in[key]["end"].split ('-')
@@ -30,7 +30,7 @@ def monthly_calc_proc (data_in):
 #
 	return	data_out
 # ------------------------------------------------------------------
-def my_key (xx):
+def my_key(xx):
 	rvalue = 0
 	try:
 		rvalue = int (xx[:4]) * 12 + int (xx[5:])
@@ -41,17 +41,17 @@ def my_key (xx):
 #
 	return	rvalue
 # ------------------------------------------------------------------
-def fee_to_month_proc (fee):
+def fee_to_month_proc(fee):
 	data = {}
 	months = []
 	for key in fee['lancers']:
 		months.append (key)
 	for key in fee['crowdworks']:
 		if not key in months:
-			months.append (key)
+			months.append(key)
 #
-	months.sort (key=my_key)
-	months.reverse ()
+	months.sort(key=my_key)
+	months.reverse()
 #
 	for month in months:
 		unit_aa = {}
@@ -65,13 +65,13 @@ def fee_to_month_proc (fee):
 #
 	return	data
 # ------------------------------------------------------------------
-sys.stderr.write ("*** 開始 ***\n")
+sys.stderr.write("*** 開始 ***\n")
 #
 json_lancers = "lancers/projects.json"
 json_crowdworks = "crowdworks/projects.json"
 
-sys.stderr.write (json_lancers + "\n")
-sys.stderr.write (json_crowdworks + "\n")
+sys.stderr.write(json_lancers + "\n")
+sys.stderr.write(json_crowdworks + "\n")
 #
 json_str = file_to_str_proc (json_lancers)
 data_lancers = json.loads (json_str)
@@ -83,12 +83,12 @@ fee = {}
 fee["lancers"] = monthly_calc_proc (data_lancers)
 fee["crowdworks"] = monthly_calc_proc (data_crowdworks)
 #
-data = fee_to_month_proc (fee)
+data = fee_to_month_proc(fee)
 #
-out_str = json.dumps (data)
-print ("Content-Type: application/json\n\n")
+out_str = json.dumps(data)
+print("Content-Type: application/json\n\n")
 #
-print (out_str)
+print(out_str)
 #
-sys.stderr.write ("*** 終了 ***\n")
+sys.stderr.write("*** 終了 ***\n")
 # ------------------------------------------------------------------
