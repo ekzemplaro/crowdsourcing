@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	crowdsourcing.js
 //
-//					Jun/30/2019
+//					Dec/28/2019
 //
 // -----------------------------------------------------------------------
 jQuery(function()
@@ -12,15 +12,15 @@ jQuery(function()
 
 	jQuery.getJSON(url_in,function (res)
 		{
-		const str_out = table_gen_proc(res,0,12)
+		const str_out = table_gen_proc(res,2019,2019)
 		jQuery('#area_year').html(str_out)
 
 		const istart = 6
-		const str_out_last = table_gen_proc(res,istart,istart + 12)
+		const str_out_last = table_gen_proc(res,2018,2018)
 		jQuery('#last_year').html(str_out_last)
 
 		const nmax = 120
-		const str_out_all = table_gen_proc(res,0,nmax)
+		const str_out_all = table_gen_proc(res,2010,2200)
 		jQuery('#area_all').html(str_out_all)
 		})
 
@@ -42,11 +42,11 @@ function table_gen_proc(res,nmin,nmax)
 	var sum_ll = 0
 	var sum_cc = 0
 	var sum_ss = 0
-	var count = 0
 	
 	for (var key in res)
 		{
-		if (nmin <= count)
+		const year = parseInt(key.substring(0,4))
+		if ((nmin <= year) && (year <= nmax))
 			{
 		const ll = res[key].lancers
 		const cc = res[key].crowdworks
@@ -63,11 +63,6 @@ function table_gen_proc(res,nmin,nmax)
 		sum_ss += ss
 			}
 
-		count += 1
-		if (count == nmax)
-			{
-			break
-			}
 		}
 
 	str_out += "<tr>"
