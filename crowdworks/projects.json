@@ -691,5 +691,12 @@
 		"end": "2019-12-20",
 		"title": "Wed 表示変更依頼",
 		"client": "eStat"
+		},
+"p100": {"url": "4583121",
+		"fee": 15444,
+		"start": "2019-12-08",
+		"end": "2019-12-27",
+		"title": "Software 遠隔更新用のVPN サーバーの立ち上げ",
+		"client": "eStat"
 		}
 }
