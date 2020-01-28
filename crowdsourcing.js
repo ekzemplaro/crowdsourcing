@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	crowdsourcing.js
 //
-//					Dec/28/2019
+//					Jan/28/2020
 //
 // -----------------------------------------------------------------------
 jQuery(function()
@@ -12,14 +12,15 @@ jQuery(function()
 
 	jQuery.getJSON(url_in,function (res)
 		{
-		const str_out = table_gen_proc(res,2019,2019)
-		jQuery('#area_year').html(str_out)
+		var str_out = table_gen_proc(res,2020,2020)
+		jQuery('#year_2020').html(str_out)
 
-		const istart = 6
-		const str_out_last = table_gen_proc(res,2018,2018)
-		jQuery('#last_year').html(str_out_last)
+		str_out = table_gen_proc(res,2019,2019)
+		jQuery('#year_2019').html(str_out)
 
-		const nmax = 120
+		str_out = table_gen_proc(res,2018,2018)
+		jQuery('#year_2018').html(str_out)
+
 		const str_out_all = table_gen_proc(res,2010,2200)
 		jQuery('#area_all').html(str_out_all)
 		})
