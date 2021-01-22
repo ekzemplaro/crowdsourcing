@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	crowdsourcing.js
 //
-//					Jan/28/2020
+//					Jan/18/2021
 //
 // -----------------------------------------------------------------------
 jQuery(function()
@@ -12,8 +12,12 @@ jQuery(function()
 
 	jQuery.getJSON(url_in,function (res)
 		{
-//	jQuery('#outarea_bb').text("*** crowdsourcing.js *** bbb ***")
-		var str_out = table_gen_proc(res,2020,2020)
+	jQuery('#outarea_bb').text("*** crowdsourcing.js *** bbb ***")
+
+		var str_out = table_gen_proc(res,2021,2021)
+		jQuery('#year_2021').html(str_out)
+
+		str_out = table_gen_proc(res,2020,2020)
 		jQuery('#year_2020').html(str_out)
 
 		str_out = table_gen_proc(res,2019,2019)
