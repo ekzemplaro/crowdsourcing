@@ -26,6 +26,9 @@ jQuery(function()
 		str_out = table_gen_proc(res,2018,2018)
 		jQuery('#year_2018').html(str_out)
 
+		str_out = table_gen_proc(res,2017,2017)
+		jQuery('#year_2017').html(str_out)
+
 		const str_out_all = table_gen_proc(res,2010,2200)
 		jQuery('#area_all').html(str_out_all)
 		})
