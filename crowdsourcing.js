@@ -1,7 +1,7 @@
 // -----------------------------------------------------------------------
 //	crowdsourcing.js
 //
-//					Jan/18/2021
+//					Oct/03/2021
 //
 // -----------------------------------------------------------------------
 jQuery(function()
@@ -29,8 +29,13 @@ jQuery(function()
 		str_out = table_gen_proc(res,2017,2017)
 		jQuery('#year_2017').html(str_out)
 
+		str_out = table_gen_proc(res,2016,2016)
+		jQuery('#year_2016').html(str_out)
+
+/*
 		const str_out_all = table_gen_proc(res,2010,2200)
 		jQuery('#area_all').html(str_out_all)
+*/
 		})
 
 	jQuery('#outarea_hh').text("*** crowdsourcing.js *** end ***")
