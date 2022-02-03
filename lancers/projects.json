@@ -509,5 +509,12 @@
 		"end": "2022-1-28",
 		"title": "サーバー構築依頼",
 		"client": "ABihc株式会社"
+		},
+"p074": {"url": "3932936",
+		"fee": 11000,
+		"start": "2022-1-29",
+		"end": "2022-2-2",
+		"title": "Ubuntuで、webARENA Indigoのvpsサーバー　API・TeraTerm接続",
+		"client": "tokyo-yume"
 		}
 }
