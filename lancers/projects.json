@@ -530,5 +530,19 @@
 		"end": "2022-3-2",
 		"title": "AWSアップデート対応",
 		"client": "株式会社KIBI (niino-ing)"
+		},
+"p077": {"url": "3985051",
+		"fee": 11000,
+		"start": "2022-3-7",
+		"end": "2022-3-22",
+		"title": "AWSアップデート対応",
+		"client": "株式会社KIBI (niino-ing)"
+		},
+"p078": {"url": "4004173",
+		"fee": 22000,
+		"start": "2022-3-22",
+		"end": "2022-3-28",
+		"title": "AWSアップデート対応　③",
+		"client": "株式会社KIBI (niino-ing)"
 		}
 }
