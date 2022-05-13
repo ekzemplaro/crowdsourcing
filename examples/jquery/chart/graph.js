@@ -21,5 +21,4 @@ color: "#A8BECB"
 }
 ];
  
-var myDoughnut = new Chart(document.getElementById("sample").
-getContext("2d")).Doughnut(doughnutData);
+var myDoughnut = new Chart(document.getElementById("sample").getContext("2d")).Doughnut(doughnutData)
