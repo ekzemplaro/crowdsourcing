@@ -551,5 +551,12 @@
 		"end": "2022-5-10",
 		"title": "【継続あり】GCPへElasticSearchの導入 - プロジェクトの完成",
 		"client": "digval"
+		},
+"p080": {"url": "4066803",
+		"fee": 11000,
+		"start": "2022-5-14",
+		"end": "2022-5-21",
+		"title": "NextJSのHPの多言語化対応（設定方法を教えて頂ければOK）",
+		"client": "eitarok"
 		}
 }
