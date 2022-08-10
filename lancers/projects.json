@@ -565,5 +565,19 @@
 		"end": "2022-7-23",
 		"title": "ＰＨＰエラーの対応",
 		"client": "KENGMAN"
+		},
+"p082": {"url": "4120882",
+		"fee": 165000,
+		"start": "2022-6-17",
+		"end": "2022-8-9",
+		"title": "KIBIラーニング修正",
+		"client": "株式会社KIBI (niino-ing)"
+		},
+"p083": {"url": "4068966",
+		"fee": 176880,
+		"start": "2022-5-27",
+		"end": "2022-8-10",
+		"title": "RFID(MIFARE Classic)読取結果をM5PAPERに表示 Arudinoソフト開発",
+		"client": "アルファ株式会社 (alpha-kabu)"
 		}
 }
