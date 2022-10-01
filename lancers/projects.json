@@ -593,5 +593,12 @@
 		"end": "2022-9-28",
 		"title": "EC-CUBEのデータベース PostgreSQLからMySQLへデータ移行の仕事",
 		"client": "エレクトリックデザイン株式会社 (electricdesign)"
-		}
+		},
+"p086": {"url": "4202311",
+		"fee": 89000,
+		"start": "2022-8-16",
+		"end": "2022-10-1",
+		"title": "業務支援（映像配信）アプリのご支援",
+		"client": "webtaro"
+		},
 }
