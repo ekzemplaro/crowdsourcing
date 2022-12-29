@@ -830,6 +830,13 @@
 		"start": "2021-12-17",
 		"end": "2021-12-18",
 		"title": "LinuxのWebサーバーをSSL化する作業一式",
-		"client": "NX小林"
+		"client": "NXKOBAYASHI"
+		},
+"p120": {"url": "8723621",
+		"fee": 8580,
+		"start": "2022-12-27",
+		"end": "2022-12-29",
+		"title": "LinuxのWebサーバーをSSL化する作業一式",
+		"client": "NXKOBAYASHI"
 		}
 }
