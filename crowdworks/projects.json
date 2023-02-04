@@ -838,5 +838,12 @@
 		"end": "2022-12-29",
 		"title": "LinuxのWebサーバーをSSL化する作業一式",
 		"client": "NXKOBAYASHI"
+		},
+"p121": {"url": "8345466",
+		"fee": 8580,
+		"start": "2022-10-31",
+		"end": "2023-2-4",
+		"title": "AWS遠隔監視システムの不具合修正依頼、改良作業",
+		"client": "yumes"
 		}
 }
