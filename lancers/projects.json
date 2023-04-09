@@ -614,5 +614,12 @@
 		"end": "2023-2-8",
 		"title": "ESP32に関する現状ソフトの修正対応",
 		"client": "applaudir"
+		},
+"p089": {"url": "4454239",
+		"fee": 9185,
+		"start": "2023-3-6",
+		"end": "2023-4-7",
+		"title": "EC-CUBEのデータベース PostgreSQLからMySQLへデータ移行",
+		"client": "igayn"
 		}
 }
