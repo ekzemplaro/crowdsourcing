@@ -621,5 +621,12 @@
 		"end": "2023-4-7",
 		"title": "EC-CUBEのデータベース PostgreSQLからMySQLへデータ移行",
 		"client": "igayn"
+		},
+"p090": {"url": "4505519",
+		"fee": 91850,
+		"start": "2023-4-17",
+		"end": "2023-4-25",
+		"title": "APIを使用したデータ移行",
+		"client": "m-tani"
 		}
 }
