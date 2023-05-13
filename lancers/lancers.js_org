@@ -1,12 +1,11 @@
 // -----------------------------------------------------------------------
 //	lancers.js
 //
-//					May/14/2023
+//					Jul/25/2017
 //
 // -----------------------------------------------------------------------
 var app = angular.module('myApp', [])
-const url_in = "./convert.py"
-// const url_in = "./projects.json"
+var url_in = "./convert.py"
 
 app.controller('MainController', ['$scope', '$timeout', '$http', function($scope, $timeout, $http){
     $timeout(function() {
