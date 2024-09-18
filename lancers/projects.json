@@ -663,5 +663,12 @@
 		"end": "2024-9-9",
 		"title": "Wio LTE JP Versionを使ったシステム開発",
 		"client": "yoshida_medi"
+		},
+"p096": {"url": "5091105",
+		"fee": 45925,
+		"start": "2024-9-9",
+		"end": "2024-9-18",
+		"title": "ESP32用のソフト開発（継続）",
+		"client": "applaudir"
 		}
 }
