@@ -1,20 +1,23 @@
 // -----------------------------------------------------------------------
 //	crowdsourcing.js
 //
-//					Jan/25/2024
+//					Feb/03/2025
 //
 // -----------------------------------------------------------------------
 jQuery(function()
 {
 	jQuery('#outarea_aa').text("*** crowdsourcing.js *** start ***")
 
-	var url_in = "./fee_sum_up.py"
+	let url_in = "./fee_sum_up.py"
 
 	jQuery.getJSON(url_in,function (res)
 		{
 	jQuery('#outarea_bb').text("*** crowdsourcing.js *** bbb ***")
 
-		var str_out = table_gen_proc(res,2024,2024)
+		let str_out = table_gen_proc(res,2025,2025)
+		jQuery('#year_2025').html(str_out)
+
+		str_out = table_gen_proc(res,2024,2024)
 		jQuery('#year_2024').html(str_out)
 
 		str_out = table_gen_proc(res,2023,2023)
